@@ -30,6 +30,15 @@ The birth of the Search Engine. Archie Query Form was written in 1990 by McGill 
 
 CERN employee Sir Tim Berners-Lee is the British computer scientist behind the creation of the World Wide Web. This includes the fundamental components that make up the Web we know as we know it; HTML, URL's (URI), HTTP and the creation of the Web Browser. In creating these technologies, Berners-Lee paved the way to how we surf the internet today, with web browsers becoming the main way a user interacts with content online. 
 
+__Ref__: 
+- https://en.wikipedia.org/wiki/History_of_the_Internet
+- https://www.internetsociety.org/internet/history-internet/brief-history-internet/
+- https://www.oreilly.com/library/view/ethernet-the-definitive/1565926609/ch01.html
+- https://www.geeksforgeeks.org/layers-of-osi-model/
+- https://en.wikipedia.org/wiki/Morris_worm
+- http://www.searchenginehistory.com/
+- https://webfoundation.org/about/vision/history-of-the-web/
+
 ### Question 2
 
 **Define** the features of the following technologies that are essential in terms of the development of the internet:
@@ -60,6 +69,11 @@ CERN employee Sir Tim Berners-Lee is the British computer scientist behind the c
 
  **Web Browsers**: The web browser is the primary method we use to interact with the online world and accounts for 95% of internet traffic. Users input URL address into the search bar, the browsers makes the request to fetch resources from the web server attached to the address and displays the content on the screen for the user. Your browser will send a _request_ for a specific file, often HTML but can be many different types, as HTTP or HTTPS. Once the server receives the request, providing it is valid, it will respond with the HTML and related content. You browser will now receive this response and render it for viewing by the user. _Rendering_ is handled in a few steps before it is displayed to the user, called the critical rendering path. First the HTML is processed and builds the DOM tree (the skeleton of the webpage in question), then the CSS markup is processed into a CSSOM tree which is combined with the DOM tree. This layout geometry is then computed and rendered onto the screen to be viewed by the user. _Developer Tools_ are a handy function that allows the client to inspect each element of a webpage and view its source code. This function while not often helpful to the average user, its incredibly useful to a developer, allowing us to view in real time which lines of code make up each element, and how changing this code effects the website.
 
+ __Ref__:
+ - https://www.techrepublic.com/article/exploring-the-anatomy-of-a-data-packet/
+ - https://www.pickaweb.co.uk/kb/what-is-http/
+ - https://medium.com/@monica1109/how-does-web-browsers-work-c95ad628a509
+
  ### Question 4 
 
  **Identify** THREE data structures used in the Ruby programming language and explain the reasons for using each.
@@ -70,6 +84,9 @@ CERN employee Sir Tim Berners-Lee is the British computer scientist behind the c
 
  **Stack**: Stacks are a container for data where the last value added is the first value removed. Index 0 is always at the bottom of the stack and you interact with the stack using Push and Pop. This data structer is used in many programs and can be useful for things such as Converting decimal numbers into binary numbers, or various solution strategies.
 
+__Ref__:
+- https://medium.com/amiralles/mastering-data-structures-in-ruby-recap-682a698b90d0
+
  ### Question 5
 
  **Describe** the features of interpreters and compilers and how they are different.
@@ -78,6 +95,9 @@ CERN employee Sir Tim Berners-Lee is the British computer scientist behind the c
 
  **Interpreted Languages** Interpretors is the alternative for compilers, it translates programs line by line and displays error of each line one at a time. This is good and bad, on one hand, it is slower to convert into machine language than compilers are. However, with line by line error displaying, this makes error detection and debugging quicker and easier for the developer, hastening the development process. It also uses less memory than Compiled languages due to not generating any intermediate object code. Interpreted languages are often easier to write and more readable to the user, which is why languages such as Ruby, Python, Javascript or PHP have become so popular.
 
+ __Ref__:
+ - https://techdifferences.com/difference-between-compiler-and-interpreter.html
+
  ### Question 6
 
  **Identify** TWO commonly used programming languages and **explain** the benefits and drawbacks of each.
@@ -85,8 +105,7 @@ CERN employee Sir Tim Berners-Lee is the British computer scientist behind the c
 **C**: C could be called the grandfather of many other programming languages. Because of this, learning C gives you a skillset highly transferable when picking up other languages in the future. It is a robust, powerful and efficient language containing many data types, data structures and operators to give you a huge platform to create all sorts of programs. C is flexible, because it is machine independent you can run it on any machine while only maybe having to make a few changes to your source code. This is helpful to developers who want to build cross-platform systems. C is very structured, so complex problems are divided into smaller functions, making testing and maintenance far easier for the developer. Because it is classed as a mid-level programming language, this means it gets the good parts of high and low level programming allowing support for kernals and drivers, as well as system software applications in high-level programming languages. As far as the negatives, no support for Object Oriented Programming is a large downfall. With OOP becoming very common practice in the industry today, being confined to a procedural programming approach doesnt leave much to be desired. Being a compiled language, the process of error checking can prove difficult with the compiler showing all the errors AFTER writing the program, leaving a complex web of errors to sift through. C also has no Exception Handling, which is a very nice feature of other languages allowing you to catch errors and return appropriate responses instead of breaking your entire program. 
 
 
-**Python**: Python is a f*cking great language. Its open source, which allows for a HUGE variety of libraries and modules available to anyone. From data visualization, to math plotting, actuator control, machine learning, game development, image processing, facial recognition and scientific computation, you name it, theres likely a python library to handle it. This allows python to be incredibly versatile, whilst still being very easy to learn and write thanks to its high level of abstraction. Its also OBJECT ORIENTED!!! This allows for great modularity, meaning ease of troubleshooting and great reusability and flexibilty of code, which is becoming the choice of many companies in the industry for all its benefits in the development process. While it is my favourite language, it still has its downsides. Due to it being on the more memory intensive side, it can be considered slower than some languages, and is also not very supportive of multi-threaded processing. To most, this isnt an issue, but it definietly restricts the intensity of programs that can be developed. Python also has no real support for mobile development, as neighter iOS or Android natively support python for their applications. It can be done, but its a bit of a pain. The end. Python's great. 
-
+**Python**: Python is a f*cking great language. Its open source, which allows for a HUGE variety of libraries and modules available to anyone. From data visualization, to math plotting, actuator control, machine learning, game development, image processing, facial recognition and scientific computation, you name it, theres likely a python library to handle it. This allows python to be incredibly versatile, whilst still being very easy to learn and write thanks to its high level of abstraction. Its also OBJECT ORIENTED!!! This allows for great modularity, meaning ease of troubleshooting and great reusability and flexibilty of code, which is becoming the choice of many companies in the industry for all its benefits in the development process. While it is my favourite language, it still has its downsides. Due to it being on the more memory intensive side, it can be considered slower than some languages, and is also not very supportive of multi-threaded processing. To most, this isnt an issue, but it definietly restricts the intensity of programs that can be developed. Python also has no real support for mobile development, as neither iOS or Android natively support python for their applications. It can be done, but its a bit of a pain. The end. Python's great. 
 
 __Ref__: 
 - https://data-flair.training/blogs/advantages-and-disadvantages-of-c/
