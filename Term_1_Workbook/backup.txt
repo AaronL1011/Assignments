@@ -1,0 +1,57 @@
+# Project - Workbook (T1)
+## by Aaron Lewis
+
+## Questions
+
+### Question 1
+**Research** the development of the internet from 1980 to today. You must describe at least FIVE key events in the development of the internet. You can refer to events, people of significance, or technologies and how they have changed over time.
+
+1. *1980 - Introduction of the Ethernet Standard*
+
+Known as the DIX Ethernet Standard, this is a communication specification for Local Area Network connections between computer devices. IEEE 802.3 provided the physical means for machines to communicate requests and pass information to each other, which is the main operating principle of the Internet and the first layers of the OSI Model. The initial coaxial cables were eventually replaced for higher speed, lighter weight options such as twisted pair cable, and fibre optic.
+
+2. *1983 - Domain Name Systems*
+
+As humans, and the primary users of the web, we would have a very difficult time remembering the IP addresses of all our favourite websites. Thanks to Elizabeth Feinler and the team behind ARPANet, this isnt a problem. DNS provides a naming system for computers, servers and other resources accessed by us via the Internet. Essentially a phone book for websites, the DNS will retrieve the entered website name, search its directories, and spit out the required numerical address to contact the appropriate server.
+
+2. *1984 - The OSI Reference Model*
+
+The OSI Model layers are as follows starting from the low level: Physical, Data Link, Network, Transport, Session, Presentation and finally Application. All these layers combined allow our machines to transmit and recieve data packets, encryption/decryption of network activity, transformation of data packets into readable information, and at the highest level, the actual software applications we end users interact with. Without the development of this model, we would not have the capabilities to handle data transmission across the globe, and would have a far more inept version of our Internet today.
+
+3. *1988 - The Morris Worm*
+
+Written by Cornell University student Robert Tappan Morris, the Morris Worm was one of the first Internet distributed viruses and the first to gain significant attention. While not created to be purposely damaging, and more to highlight security flaws in the current systems at hand, Within 24 hours of deployment, roughly 10% of the current ~60,000 machines connected to the internet were affected. The worm targeted computers running a specific version of UNIX with many top universities and even NASA being some of the casualties, slowing crucial functions to a crawl. The result of this program was a stark realization just how vulnerable computers had become, and caused cybersecurity to taken far more seriously.
+
+4. **1990 - Archie Query Form and Search Engines*
+
+The birth of the Search Engine. Archie Query Form was written in 1990 by McGill University student Alan Emtage. It kept an index of all FTP servers connected to the internet providing users with a way to access publicly available files and download them. Ideas like Archie led to the creation of the popular search engines we use today, such as Google, Duck Duck Go, or even Bing (unfortunely).
+
+5. *1989 - 1990 - Web Browsers and the World Wide Web*
+
+CERN employee Sir Tim Berners-Lee is the British computer scientist behind the creation of the World Wide Web. This includes the fundamental components that make up the Web we know as we know it; HTML, URL's (URI), HTTP and the creation of the Web Browser. In creating these technologies, Berners-Lee paved the way to how we surf the internet today, with web browsers becoming the main way a user interacts with content online. 
+
+### Question 2
+
+**Define** the features of the following technologies that are essential in terms of the development of the internet:
+ - packets
+ - IP addresses (IPv4 and IPv6)
+ - routers and routing
+ - domains and DNS
+
+ **Packets**: Every time you access the internet, your data transmissions are split up into ~1000 byte incriments called packets, and sent to its destination by the best calculated route. Packets are commonly split into 3 sections: Header, Payload and Footer.
+ The header provides instructions about the data such as packet lengths, protocol information, destination and origin addressed. Payload is the bulk of the packet which contains the actual data being sent. Finally Footer (sometimes Trailer) contains end of packet information and error checking methods, most commonly CRC (Cyclic Redundancy Check).
+
+ **IP Addresses**: Every device connected to the Internet has a unique identifying number attached to it. This number, your IP Address, allows you to look up other devices on a network, as well as allowing other devices to search for you. Basically an internet telephone number, with every online request you are pinging an IP address to establish the connection required for data transmission.
+
+ **Routing and Routers**: Routers are used in the forwarding of data packets between computers and their networks, the gateway to the internet. Routers manage your data transmission traffic using certain routing protocols, taking your requests from your local network, and passing them through to the Internet. It also acts as security for intrusion from outside devices to your network, protecting your information from prying eyes. 
+
+ **Domains and DNS**: Domains are the names we type into our URL bars to reach every website. They provide an easy to remember, convenient way to access web pages instead of the complicated series of numbers that servers actually identify with. Domain Name Servers are responsible for handling the conversion of Domains to IP Addresses and are often provided by your ISP. When you enter the name of a webpage into your URL bar, the DNS recieves the request, looks at its index of servers and finds the IP address attached to that domain name, returning the address to your browser and allowing you to continue with your internet surfing.
+
+ ### Question 3
+
+ **Define** the features of the following technologies that are essential in terms of the development of the internet:
+ - TCP
+ - HTTP and HTTPS
+ - web browsers (requests, rendering and developer tools)
+
+ **TCP**: Transmission Control Protocol (TCP) is a set of rules that allow two machines to communicate with eachother over a network. TCP is often referenced as the Layer-4 protocols of the OSI model and is the process that splits up your data into packets, attaches source and destination information and error checking data, and passess it to the network. TCP has provided a way to transmit data that is reliable, and high-performance. TCP has proven to be the best method of 
