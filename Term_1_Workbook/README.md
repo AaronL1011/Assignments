@@ -116,13 +116,59 @@ __Ref__:
 
 **Identify** TWO ethical issues, and **discuss** the extent to which an IT professional is ethically responsible in terms of the issue.
 
-__Access to a user's personal information (medical, family, financial, personal attributes such as sexuality, religion or beliefs)__
+**aggressive sales and marketing practices designed to mislead and deceive consumers**
 
-When an IT professional has access to personal information, there are are few considerations that have to be made. First of all, protection of user data and privacy is of UPMOST importance, especially if it is as sensitive as the data mentioned above. User data is one of todays most valuable resources. Companies can data mine and use it for targeted advertising, and plenty of people would love to get their hands on any data they could abuse in ways such as identity theft, or blackmail. Therefore, having good security systems and encryption in place for defence of your servers and saved data is crucial, as any unwanted infiltration could spell distaster for both your users, and your company. Secondly, as a software developer, you also hold some responsibility in the proper use and respect of your user's data. Often when signing up to a service, users will sign a privacy statement. This is so your users know exactly the way you gather their data and how you manage it, and provides a sense of transparency to the user. 
+The Australian Computer Society released their own Code of Ethics to which every ACS Member is expected to follow. Principle 3 of the ACS Code of Ethics states;
+"Honesty. You will be honest in your reputation of skills, knowledge, services and products". This ethical issue of the misleading, or deceipt of consumers directly violates
+the honesty princible of our Code of Ethics. This ensures all developers make the correct decisions in regards to any work they partake in and protects end users from malicious intent.
 
-__Freedom of Thought, Conscience, Speech and the Media__
+**Access to a user’s personal information (medical, family, financial, personal attributes such as sexuality, religion, or beliefs)**
 
-The idea of freedom of thought, freedom of speech and the like sounds good in theory, however not everyone's thoughts or speech comes from a good place. True freedom of speech online would allow all schools of thought to have free reign, no matter 
+All software engineers are expected to adhear to a code of conduct developed by the IEEE known as the "Software Engineering Code of Ethics and Professional Practice"
+This document is intended to act as a standard for the teaching and practice of software engineering. This is comprised of eight main principles, one of which applicable to
+the access of users personal information reads "1. Public. Software Engineers shall act consistently with the public interest." This principle can be used for protection and privacy of users sensitive information as the sharing or misuse of user data is most certainly not consistent with public interest.
+
+Consider the folling case study:
+
+**Case Study**
+
+>Leikessa Jones owns her own consulting business, and has several people working
+for her. Leikessa is currently designing a database management system for the personnel
+office of ToyTimeInc., a mid-sized company that makes toys. Leikessa has involved
+ToyTimeInc management in the design process from the start of the project. It is now
+time to decide about the kind and degree of security to build into the system.
+Leikessa has described several options to the client. The client has decided to opt
+for the least secure system because the system is going to cost more than was initially
+planned, and the least secure option is the cheapest security option. Leikessa knows that
+the database includes sensitive information, such as performance evaluations, medical
+records, and salaries. With weak security, she fears that enterprising ToyTimeInc
+employees will be able to easily access this sensitive data. Furthermore, she fears that the
+system will be an easy target for external hackers. Leikessa feels strongly that the system
+should be more secure than it would be if the least secure option is selected.
+Ms. Jones has tried to explain the risks to ToyTimeInc, but the CEO, the CIO, and
+the Director of Personnel are all convinced that the cheapest security is what they want.
+Should Jones refuse to build the system with the least secure option?
+
+In this example, we face the choice of not appropriately protecting sensitive user data. The client is ignoring our security advice and wants to proceed with the creation of a platform vulnerable to attack. In this instance we can refer to both of the legal codes of conduct previously listed to help us make the correct ethically sound decision. First we will examine which ethical issues are applicable in this case. The developer knows that the database will include "sensitive information, such as performance evaluations, medical records, and salaries". Immediately this is an ethical issue of access to users personal information. Another ethical issue relating to the IEEE standards is raised in regards to knowingly releasing a product that it sub-par to what the program needs to be. 
+
+If the developer in question is really unsure in this situation, we can look at a few principles of both the "ACS Code of Ethics" and "Software Engineering Code of Ethics and Professional Practice". Principle 1 of both documents state that actions taken by a software engineer should act in accordance with the interest of the public. Again, not appropriately protecting the publics data would violate these terms. Rule 2 of the Software Engineering Code of Ethics and Professional Practice also talks about acting in a manner that is within the clients best interest, however clearly states that it also has to be consistent with public interest. Principle 2 of the "ACS Code of Ethics" also states that we as Engineers will strive to improve the quality of life of those affected by our work. This is just another easy example of this condition not lining up with our current situation and the requests of our client, as the users who's data will be stored in this database will now be exposed to threats towards their sensistive information.
+
+We are also able to use Principle 3 of the Software Engineering Code of Ethics and Professional Practice, Product. Software engineers under this document are expected to ensure that their products and related modifications meet the highest professional standards possible. The developer is aware that the client is requesting sub-optimal security measures for their database, so we know for a fact that this is not up to the professional standards required. Priciple 6 of the SECEPP also covers the Software Engineer acting with integrity, and upholding the reputation of their profession. With all these principles, it makes our decision much more clear on how to act appropriately and ethically towards the client and the end users of this platform. The correc decision to make would be to refuse development of this platform unless the client accepts the need for higher quality security measures to be put in place.
+
+If any developer is confused on what actions they should take during their career, it is a wise decision to refer to these Code of Ethics documents, and any other documents from their employer which may be applicable, in order to ensure they are consistently making ethical decisions, protecting the users, themselves and their clients along the way.
+
+
+
+
+
+
+
+
+
+__Ref__: 
+- https://www.researchgate.net/publication/278417404_Software_Engineering_Code_of_Ethics_and_Professional_Practice
+- https://www.acs.org.au/content/dam/acs/acs-documents/Code-of-Ethics.pdf
+- https://web.cs.wpi.edu/~jb/CS3043/Readings/06%20-%20Ethics/EthicsCaseStudies.pdf?fbclid=IwAR0gIJlQQPgTzIfn8eWXT6p6RENu7rXX3txmWRTCMzrNfJy5qDUKJu0j96A
 ### Question 8
 
 Explain control flow, using an example from the Ruby programming language.
