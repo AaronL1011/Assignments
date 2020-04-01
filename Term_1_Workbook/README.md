@@ -56,6 +56,13 @@ __Ref__:
 
  **Domains and DNS**: Domains are the names we type into our URL bars to reach every website. They provide an easy to remember, convenient way to access web pages instead of the complicated series of numbers that servers actually identify with. Domain Name Servers are responsible for handling the conversion of Domains to IP Addresses and are often provided by your ISP. When you enter the name of a webpage into your URL bar, the DNS recieves the request, looks at its index of servers and finds the IP address attached to that domain name, returning the address to your browser and allowing you to continue with your internet surfing.
 
+__Ref__:
+- https://www.liveaction.com/blog/network-packet/
+- https://www.howtogeek.com/341307/how-do-ip-addresses-work/
+- https://geek-university.com/ccna/what-is-a-router/
+- https://medium.com/@RadixRegistry/what-is-dns-and-how-does-it-work-domain-name-system-explained-bcb48c1ff61d
+
+
  ### Question 3
 
  **Define** the features of the following technologies that are essential in terms of the development of the internet:
