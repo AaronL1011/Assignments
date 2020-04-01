@@ -116,7 +116,7 @@ __Ref__:
 
 **Identify** TWO ethical issues, and **discuss** the extent to which an IT professional is ethically responsible in terms of the issue.
 
-**aggressive sales and marketing practices designed to mislead and deceive consumers**
+**Aggressive sales and marketing practices designed to mislead and deceive consumers**
 
 The Australian Computer Society released their own Code of Ethics to which every ACS Member is expected to follow. Principle 3 of the ACS Code of Ethics states;
 "Honesty. You will be honest in your reputation of skills, knowledge, services and products". This ethical issue of the misleading, or deceipt of consumers directly violates
@@ -157,23 +157,26 @@ We are also able to use Principle 3 of the Software Engineering Code of Ethics a
 
 If any developer is confused on what actions they should take during their career, it is a wise decision to refer to these Code of Ethics documents, and any other documents from their employer which may be applicable, in order to ensure they are consistently making ethical decisions, protecting the users, themselves and their clients along the way.
 
-
-
-
-
-
-
-
-
 __Ref__: 
 - https://www.researchgate.net/publication/278417404_Software_Engineering_Code_of_Ethics_and_Professional_Practice
 - https://www.acs.org.au/content/dam/acs/acs-documents/Code-of-Ethics.pdf
 - https://web.cs.wpi.edu/~jb/CS3043/Readings/06%20-%20Ethics/EthicsCaseStudies.pdf?fbclid=IwAR0gIJlQQPgTzIfn8eWXT6p6RENu7rXX3txmWRTCMzrNfJy5qDUKJu0j96A
+
 ### Question 8
 
 Explain control flow, using an example from the Ruby programming language.
 
-Control flow is the order in which the methods and statements of a program are executed. 
+In regards to programming languages, control flow is the order of operations that will be executed. This includes statements, assignments and method calls. Certain programming languages have different Control Flow Statements, which determines which line of code is being run in a program at any time. An example includes:
+```ruby
+def controlFlow
+    if x == 1
+        puts "x is equal to 1"
+    else
+        puts "x is not equal to 1"
+    end
+end
+```
+In this ruby example we can look at how the if statement handles control flow. The if keyword is used to check if the specified condition is true or false. If it is true, it will execute the block of code under it, until the next keyword (else, elsif or end). If the condition is false, the control flow will ignore the code block and continue to the next keyword, in this case "else", which will execute its following block of code if all the previous conditions failed.
 
 ### Question 9
 
