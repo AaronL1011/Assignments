@@ -81,3 +81,30 @@ __Ref__:
 ### Question 7
 
 **Discuss** common methods of protecting information and data and how you would apply them to the project.
+
+### Question 14
+Conduct **research** into a marketplace website (app) and answer the following parts:
+
+__a. List and describe the software used by the app.__
+
+I have chosen to conduct research into https://reverb.com/, a musician oriented marketplace for the sale of both new and used music equipment.
+
+The tech stack utilised by Reverb.com includes:
+- Rails: a server-side web application framework written in Ruby.
+- jQuery: a javascript library.
+- PostgreSQL: a free and open-source relational database management system.
+- Amazon EC2: allows users to rent virtual computers on which to run their own computer applications.
+- Cloudflare: a web-infrastructure and website-security company.
+- Akamai: a global content delivery network, cybersecurity, and cloud service.
+- Google Analytics: a web analytics service offered by Google that tracks and reports website traffic.
+
+__b. Describe the hardware used to host the app.__
+
+Hardware used to host this web application is the same as any:
+
+- Processor (CPU): The CPU is responsible for all logic processing within an application. In order to provide users with a responsive and enjoyable experience when using the software, it is important to consider the type and speed of processer to use for your platform. If the selected processer is not rated to handle the traffic that your application generates, it can lead to stalling and potentially errors during peak usage.
+- Memory (RAM): RAM is where all the momentary data is stored during the operation of your application. All of your business functions will interect with this memory to perform its functions, and the performance of your application is directly dependent on the speed and size of the RAM available.
+- Hard Drive (Storage): Seeing as this web app will likely hold a large amount of data given the sheer number of listings and images attached to those listings, selecting an appropriate amount of storage should be carefully considered during the development process.
+
+__c. Describe the interaction of technologies within the app.__
+
