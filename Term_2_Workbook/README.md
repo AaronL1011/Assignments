@@ -43,3 +43,21 @@ __Agile Software Development__ is one of many software development approaches. I
 __Ref__:
     - https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
     - https://plan.io/blog/ultimate-guide-to-implementing-agile-project-management-and-scrum/
+
+
+### Question 4
+Provide an **overview** and **description** of a standard source control workflow.
+
+
+
+### Question 5
+Provide an **overview** and **description** of a standard software testing process (e.g. manual testing)
+
+Software testing is catagorised into a few forms, which take place throughout the development process. The most basic form of testing is manual testing, which is the process of ensuring the correct output of a function given a specific input. Does the program return what is expected? Can the program handle an invalid input gracefully, or does it break the whole function?
+As the development cycle progresses and the application grows and morphs, it is a good idea to carry out 'Regression Testing'. This is purely testing to make sure that the application still functions as it did prior to recent changes. At any point during the addition of features or alteration of existing code, functions within your program can decide to operate completely different to what you initially designed. Once a viable product is available, it may be a good idea to carry out some Automated testing and User Testing to save some man-power and ensure your system is operating as desired by the client. This allows the end-user to confirm that each function of the application has been created as per the requirements and the user is able to suggest changes if any features aren't up to scratch.
+
+__Ref__:
+    - https://usersnap.com/blog/software-testing-basics/
+
+### Question 6
+
