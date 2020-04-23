@@ -9,7 +9,7 @@
 Ruby on Rails is one of many examples of an M-V-C architectural pattern. This pattern has become very popular due to its ease of collaboration between developers, rapid application development and updating, quick addition of new features to existing applications and simplification of debugging as all the components are separated when written properly. The idea of MVC is to split your application into 3 components; Models, Views and Controllers. Each component has a specific purpose, Models handles data storage/structure and interaction with the database, Views handle all the page layout and user interaction, and Controllers handle all the business logic/functions of your application. Rails is a convention over configuration framework, which requires developers to follow a specific set of rules when creating their application allowing in-built functions and relationships to be established very quickly. However, if you were to deviate from these standards, you will face errors until you correct it back to the Rails way. Rails web applications are often hosted on a web-server such as Puma, and operate by routing HTTP requests send from a users machine over the internet to specified controllers and functions of your application which will return the appropriate data to the users browser.
 
 __Ref__:
-    - https://www.interserver.net/tips/kb/mvc-advantages-disadvantages-mvc/
+- https://www.interserver.net/tips/kb/mvc-advantages-disadvantages-mvc/
 
 
 **SQLite**
@@ -27,8 +27,8 @@ SQLite is an open-source Relational Database Management System which boasts the 
     - SQLite is also not great at handling multiple requests from different clients at the same time. It will lock writing permissions if someone is reading the data entry, and could cause errors/delays in a busy-traffic scenario.
 
 __Ref__: 
-    - https://www.sqlite.org/about.html
-    - https://h3rald.com/articles/quick-overview-of-sqlite/
+- https://www.sqlite.org/about.html
+- https://h3rald.com/articles/quick-overview-of-sqlite/
 
 ### Question 3
 **Discuss** the implementation of Agile project management methodology.
@@ -41,8 +41,8 @@ __Agile Software Development__ is one of many software development approaches. I
     - Review and reflect with the team at regular intervels. This can highlight issues effecting performance or concerns between team members, strategize the next steps of development and allows the team to adjust its approach and behaviour accordingly.
 
 __Ref__:
-    - https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
-    - https://plan.io/blog/ultimate-guide-to-implementing-agile-project-management-and-scrum/
+- https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
+- https://plan.io/blog/ultimate-guide-to-implementing-agile-project-management-and-scrum/
 
 
 ### Question 4
@@ -51,7 +51,7 @@ Provide an **overview** and **description** of a standard source control workflo
 Source/version control has become a crucial part in the software development cycle and collaboration of multiple developers. With more than one person working on an application, alterations to files can get out of hand very quickly. This is where the implementation of Source Control Management comes in. The normal workflow of a source control starts with the creation of a repository, this is where all the files associated with the application are held. The master branch is then defined which is where final changes from developers are pushed when the code is confirmed to be appropriate and reliable. Each developer can create their own branch, where they can work on the tasks they have been assigned without affecting the other developers' work. Once the team is happy with a new function or module, they can merge their branches into a testing branch or the master branch, where the version control will sort through all the changes made and gracefully mesh them together.
 
 __Ref__:
-    - https://build5nines.com/introduction-to-git-version-control-workflow/
+- https://build5nines.com/introduction-to-git-version-control-workflow/
 
 
 ### Question 5
@@ -61,7 +61,23 @@ Software testing is catagorised into a few forms, which take place throughout th
 As the development cycle progresses and the application grows and morphs, it is a good idea to carry out 'Regression Testing'. This is purely testing to make sure that the application still functions as it did prior to recent changes. At any point during the addition of features or alteration of existing code, functions within your program can decide to operate completely different to what you initially designed. Once a viable product is available, it may be a good idea to carry out some Automated testing and User Testing to save some man-power and ensure your system is operating as desired by the client. This allows the end-user to confirm that each function of the application has been created as per the requirements and the user is able to suggest changes if any features aren't up to scratch.
 
 __Ref__:
-    - https://usersnap.com/blog/software-testing-basics/
+- https://usersnap.com/blog/software-testing-basics/
 
 ### Question 6
 
+**Discuss** and **analyse** requirements related to information system security and how they relate to the project.
+
+In the digital age, cyber security and protecting your application's data has become one of the most crucial aspects, especially for a web application. If your application houses sensitive user data such as names, addresses, phone numbers/emails, medical records or payment information, it is the responsibility of all IT professionals to ensure that appropriate measures have been put in place to negate malicious attacks. Some examples of potential threats to the security of your web application include: 
+- Cross-Site Request Forgery: This is a form of attack that "exploits trust that a site has for the user". This allows the attacker to trick the user into performing payment transations, password changes and other malicious actions without the knowledge of the user.
+- Injection Attacks: One of the more common attacks, Injection (or SQL Injection) uses forms/urls to enter malicious SQL requests which have the potential to return user accounts, passwords and other sensitive data, or even destroy whole tables of data.
+- Malware (Malicious Software): Malware is described as any software that is designed to be harmful to users/systems. Worms, Trojans, Spyware, Ransomware or Viruses are all some buzzwords that relate to malware in general. Proper firewall implementation is key in the defence of these malicious software's for your application and users.
+- Phishing Attacks: These attacks are often in the form of emails, direct messages or phone calls and attempt to trick users into providing sensitive information to an attacker by disguising the attack as a commonly known web-page, where the user can enter usernames, passwords, even payment information which will be sent straight to the attacker. These are harder to protect against as it often comes down to common sense, but ensuring your users that they should never respond to unsolicited requests for their personal information is very important.
+
+__Ref__:
+- https://www.cgisecurity.com/csrf-faq.html
+- https://www.imperva.com/learn/application-security/sql-injection-sqli/
+- https://www.malwarebytes.com/malware/
+
+### Question 7
+
+**Discuss** common methods of protecting information and data and how you would apply them to the project.
