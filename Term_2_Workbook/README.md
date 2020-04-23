@@ -48,6 +48,10 @@ __Ref__:
 ### Question 4
 Provide an **overview** and **description** of a standard source control workflow.
 
+Source/version control has become a crucial part in the software development cycle and collaboration of multiple developers. With more than one person working on an application, alterations to files can get out of hand very quickly. This is where the implementation of Source Control Management comes in. The normal workflow of a source control starts with the creation of a repository, this is where all the files associated with the application are held. The master branch is then defined which is where final changes from developers are pushed when the code is confirmed to be appropriate and reliable. Each developer can create their own branch, where they can work on the tasks they have been assigned without affecting the other developers' work. Once the team is happy with a new function or module, they can merge their branches into a testing branch or the master branch, where the version control will sort through all the changes made and gracefully mesh them together.
+
+__Ref__:
+    - https://build5nines.com/introduction-to-git-version-control-workflow/
 
 
 ### Question 5
