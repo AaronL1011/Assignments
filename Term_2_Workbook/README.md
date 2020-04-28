@@ -82,6 +82,30 @@ __Ref__:
 
 **Discuss** common methods of protecting information and data and how you would apply them to the project.
 
+The protection of an applications information/data is extremely important as there are often legal obligations attached to protect the users and their online presence. Common forms of data protection include:
+- Authentication: Implimenting a login system whether that be through Cookie/Session authentication, Web Tokens or OAUTH can go a long way in the protection of your data. By requiring a user to log in to perform certain actions, you are creating a barrier against intrusion from unrelated/unauthorised third-parties.
+- Encryption: By disguising sensitive data using an encryption method, you can prevent the risk of potential intruders being able to read the plain-text in your databases. In the event that someone did gain access to your database tables, they would only be met with encrypted strings of text, which they would have no way of decrypting. 
+- Role Management: Setting certain permissions for specific roles is a fantastic way to limit and monitor the actions that users can take on your applications. Eg. You wouldnt want a low-level user having write access to important sections of your application, you would leave those permissions for moderators or administrators. 
+
+### Question 10
+
+**Describe** the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
+
+Keeping house:
+- Orphaned Data
+- Duplicate Data
+- Old/Unused Data
+- Cost to host unnecessary data
+
+Data Validation:
+- Ensuring correct data input using form validation
+
+
+
+
+
+
+
 ### Question 14
 Conduct **research** into a marketplace website (app) and answer the following parts:
 
