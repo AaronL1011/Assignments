@@ -39,10 +39,10 @@ SQLite is an open-source Relational Database Management System which boasts the 
 
 **Agile Software Development** is one of many software development approaches. It builds on the idea of iterative development where the software is built and delivered to the client in increments. Implementing this into the development of your project allows for rapid progression and somewhat fluidity in the addition of new features and changing requirements. In order to implement Agile techniques, you need to adhear to a set of principles.
 
-    - Encourage heavy communication between stakeholders and developers. This will ensure that flexibility of design is maintained and that the final product adhears to the clients most recent requirements.
-    - Aim to deliver in frequent iterations. This allows your client to see up-to-date progress and inform you of any changes or additions while you're developing the next iteration. Always remain receptive to changes from your client, as this will only benefit the application and customer satisfaction.
-    - Work at a sustainable pace. Ensuring the development of your application is not hindering the performance of team members and users is crucial to the creation of a quality product. With everyone at a comfortable pace, you don't need to worry about developers burning out, and you can be sure to deliver working software in the agreed timeframe.
-    - Review and reflect with the team at regular intervels. This can highlight issues effecting performance or concerns between team members, strategize the next steps of development and allows the team to adjust its approach and behaviour accordingly.
+- Encourage heavy communication between stakeholders and developers. This will ensure that flexibility of design is maintained and that the final product adhears to the clients most recent requirements.
+- Aim to deliver in frequent iterations. This allows your client to see up-to-date progress and inform you of any changes or additions while you're developing the next iteration. Always remain receptive to changes from your client, as this will only benefit the application and customer satisfaction.
+- Work at a sustainable pace. Ensuring the development of your application is not hindering the performance of team members and users is crucial to the creation of a quality product. With everyone at a comfortable pace, you don't need to worry about developers burning out, and you can be sure to deliver working software in the agreed timeframe.
+- Review and reflect with the team at regular intervels. This can highlight issues effecting performance or concerns between team members, strategize the next steps of development and allows the team to adjust its approach and behaviour accordingly.
 
 **Ref**:
 
@@ -63,12 +63,15 @@ Source/version control has become a crucial part in the software development cyc
 
 Provide an **overview** and **description** of a standard software testing process (e.g. manual testing)
 
-Software testing is catagorised into a few forms, which take place throughout the development process. The most basic form of testing is manual testing, which is the process of ensuring the correct output of a function given a specific input. Does the program return what is expected? Can the program handle an invalid input gracefully, or does it break the whole function?
-As the development cycle progresses and the application grows and morphs, it is a good idea to carry out 'Regression Testing'. This is purely testing to make sure that the application still functions as it did prior to recent changes. At any point during the addition of features or alteration of existing code, functions within your program can decide to operate completely different to what you initially designed. Once a viable product is available, it may be a good idea to carry out some Automated testing and User Testing to save some man-power and ensure your system is operating as desired by the client. This allows the end-user to confirm that each function of the application has been created as per the requirements and the user is able to suggest changes if any features aren't up to scratch.
+Software testing is catagorised into a few forms, which take place throughout the development process. One form of this is known as Regression Testing. As the development cycle progresses and the application grows and morphs, it is a good idea to carry out regression testing to make sure that the application still functions as it did prior to recent changes. At any point during the addition of features or alteration of existing code, functions within your program can decide to operate completely different to what you initially designed. Methods of regression testing include:
+- Retest All: This is the most time-consuming and resource intensive method, as it requires running all tests in your entire application.
+- Regression Test Selection: This allows you to run a select set of tests relating to any code changes that have been recently made, reducing wasted time.
+- Prioritizating Testing: Selection of test cases based upon impact to the business, frequently used functions etc. By prioritizing the correct operation of critical functions of your application, you can reduce the number of tests required during your development.
 
 **Ref**:
 
 - https://usersnap.com/blog/software-testing-basics/
+- https://www.guru99.com/regression-testing.html
 
 ### Question 6
 
