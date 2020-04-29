@@ -70,10 +70,10 @@ As the development cycle progresses and the application grows and morphs, it is 
 
 In the digital age, cyber security and protecting your application's data has become one of the most crucial aspects, especially for a web application. If your application houses sensitive user data such as names, addresses, phone numbers/emails, medical records or payment information, it is the responsibility of all IT professionals to ensure that appropriate measures have been put in place to negate malicious attacks. Some examples of potential threats to the security of your web application include:
 
-- Cross-Site Request Forgery: This is a form of attack that "exploits trust that a site has for the user". This allows the attacker to trick the user into performing payment transations, password changes and other malicious actions without the knowledge of the user.
-- Injection Attacks: One of the more common attacks, Injection (or SQL Injection) uses forms/urls to enter malicious SQL requests which have the potential to return user accounts, passwords and other sensitive data, or even destroy whole tables of data.
-- Malware (Malicious Software): Malware is described as any software that is designed to be harmful to users/systems. Worms, Trojans, Spyware, Ransomware or Viruses are all some buzzwords that relate to malware in general. Proper firewall implementation is key in the defence of these malicious software's for your application and users.
-- Phishing Attacks: These attacks are often in the form of emails, direct messages or phone calls and attempt to trick users into providing sensitive information to an attacker by disguising the attack as a commonly known web-page, where the user can enter usernames, passwords, even payment information which will be sent straight to the attacker. These are harder to protect against as it often comes down to common sense, but ensuring your users that they should never respond to unsolicited requests for their personal information is very important.
+- Cross-Site Request Forgery: This allows the attacker to trick the user into performing payment transations, password changes and other malicious actions without the knowledge of the user. I will need to ensure the correct authentication checks are carried out in my web application to avoid this.
+- Injection Attacks: One of the more common attacks, Injection (or SQL Injection) uses forms/urls to enter malicious SQL requests which have the potential to return user accounts, passwords and other sensitive data, or even destroy whole tables of data. To reduce the risk of this in my appication, I should carry out proper sanitizing of all data entries.
+- Malware (Malicious Software): Malware is described as any software that is designed to be harmful to users/systems. Worms, Trojans, Spyware, Ransomware or Viruses are all some buzzwords that relate to malware in general. Proper firewall implementation is key in the defence of these malicious software's for your application and users. Luckily the methods of building and hosting my web application should include enough security to protect against this.
+- Phishing Attacks: These attacks are often in the form of emails, direct messages or phone calls and attempt to trick users into providing sensitive information to an attacker by disguising the attack as a commonly known web-page, where the user can enter usernames, passwords, even payment information which will be sent straight to the attacker. When it comes to my web application, this could be harder to protect against as it often comes down to common sense, but ensuring your users that they should never respond to unsolicited requests for their personal information is very important.
 
 **Ref**:
 
@@ -87,9 +87,28 @@ In the digital age, cyber security and protecting your application's data has be
 
 The protection of an applications information/data is extremely important as there are often legal obligations attached to protect the users and their online presence. Common forms of data protection include:
 
-- Authentication: Implimenting a login system whether that be through Cookie/Session authentication, Web Tokens or OAUTH can go a long way in the protection of your data. By requiring a user to log in to perform certain actions, you are creating a barrier against intrusion from unrelated/unauthorised third-parties.
-- Encryption: By disguising sensitive data using an encryption method, you can prevent the risk of potential intruders being able to read the plain-text in your databases. In the event that someone did gain access to your database tables, they would only be met with encrypted strings of text, which they would have no way of decrypting.
-- Role Management: Setting certain permissions for specific roles is a fantastic way to limit and monitor the actions that users can take on your applications. Eg. You wouldnt want a low-level user having write access to important sections of your application, you would leave those permissions for moderators or administrators.
+- Authentication: Implimenting a login system whether that be through Cookie/Session authentication, Web Tokens or OAUTH can go a long way in the protection of your data. By requiring a user to log in to perform certain actions, you are creating a barrier against intrusion from unrelated/unauthorised third-parties. Using the Devise gem will be a quick and secure way of ensuring proper authentication within my application.
+- Encryption: By disguising sensitive data using an encryption method, you can prevent the risk of potential intruders being able to read the plain-text in your databases. In the event that someone did gain access to your database tables, they would only be met with encrypted strings of text, which they would have no way of decrypting. Data within my application that needs to be encrypted will include user account information, and transaction information. The Stripe and Devise gem come included with the appropriate forms of encryption and security to protect against attacks.
+- Role Management: Setting certain permissions for specific roles is a fantastic way to limit and monitor the actions that users can take on your applications. Eg. You wouldnt want a low-level user having write access to important sections of your application, you would leave those permissions for moderators or administrators. In order to ensure appropriate permissions are assigned to users, I will need to set a specific administrator account for the management of the website, and make sure users are only about to read listings and alter their own listings.
+
+__Ref__:
+- https://www.okta.com/security-blog/2019/02/the-ultimate-authentication-playbook/
+- https://www.freecodecamp.org/news/how-does-devise-keep-your-passwords-safe-d367f6e816eb/
+
+### Question 8
+
+**Research** what your legal obligations are in relation to handling user data and how they can be met for the **project**.
+
+Businesses may need to abide by guidelines outlined in the Privacy Act 1988 given they fit a certain number of requirements (eg. Having an annual turnover >$3m, or being a certain type of small business), or opt-in to the Privacy Act. Some of these guidelines include:
+- "Open and transparent management of personal information": Ensuring a sense of transparency with your users in the ways you handle and use their personal information.
+- "Security of Personal Information": Implementing appropriate measures to secure sensitive information from malicious attacks.
+- "Anonymity and pseudonymity": Enabling users to operate within your domain anonymously or under a pseudonym.
+
+Due to the small nature of my project, in a legal sense, I don't have to go overboard with protecting user data. I am mainly concerned with account passwords and payment/transaction information. Because the gems I plan to use have inbuilt methods of adequately protecting this information, my responsibilities have been met. I could allow users to have a custom Username, aside from their name for the shipping address, which would abide closer to the guidlines outlined in the Privacy Act.
+
+__Ref__:
+- https://www.business.gov.au/Risk-management/Cyber-security/How-to-protect-your-customers-information
+- https://www.oaic.gov.au/assets/privacy/guidance-and-advice/app-quick-reference-tool.pdf
 
 ### Question 10
 
@@ -108,16 +127,10 @@ It is a good idea to implement methods of reducing the risk of data integrity is
 - Scheduled cleaning of database entries: By routinely inspecting for duplicate data, orphaned tables and other data errors, its easy to keep on top of the condition of your databases aswell as reducing storage costs and general bloating.
 - Roles/Permissions: By controlling who has access to certain sections of data, you can reduce the risk of both human error whilst working in a database and any potential attacks from third parties.
 
-Keeping house:
-
-- Orphaned Data
-- Duplicate Data
-- Old/Unused Data
-- Cost to host unnecessary data
-
-Data Validation:
-
-- Ensuring correct data input using form validation
+__Ref__:
+- https://blog.kyoceradocumentsolutions.com.au/what-is-data-integrity
+- https://www.promptcloud.com/blog/7-steps-to-improve-data-integrity/
+- https://afteracademy.com/blog/what-is-data-integrity
 
 ### Question 14
 
