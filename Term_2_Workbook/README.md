@@ -258,3 +258,17 @@ According to StackShare.io, Reverb.com is hosted using nginx.
 - Hard Drive (Storage): Seeing as this web app will likely hold a large amount of data given the sheer number of listings and images attached to those listings, selecting an appropriate amount of storage should be carefully considered during the development process.
 
 **c. Describe the interaction of technologies within the app.**
+
+
+**d. Describe the way data is structured within the app**
+
+
+**e. Identify entities which must be tracked by the app**
+
+
+
+**f. Identify the relationships and associations between the entities you have identified in part (e)**
+
+
+**g. Design a schema using an Entity Relationship Diagram (ERD) appropriate for the database of this website (assuming a relational database model)**
+
