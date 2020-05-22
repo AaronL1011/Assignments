@@ -8,11 +8,15 @@
 
 **Describe** the architecture of a typical Rails application.
 
-Ruby on Rails is one of many examples of an M-V-C architectural pattern. This pattern has become very popular due to its ease of collaboration between developers, rapid application development and updating, quick addition of new features to existing applications and simplification of debugging as all the components are separated when written properly. The idea of MVC is to split your application into 3 components; Models, Views and Controllers. Each component has a specific purpose, Models handles data storage/structure and interaction with the database, Views handle all the page layout and user interaction, and Controllers handle all the business logic/functions of your application. Rails is a convention over configuration framework, which requires developers to follow a specific set of rules when creating their application allowing in-built functions and relationships to be established very quickly. However, if you were to deviate from these standards, you will face errors until you correct it back to the Rails way. Rails web applications are often hosted on a web-server such as Puma, and operate by routing HTTP requests send from a users machine over the internet to specified controllers and functions of your application which will return the appropriate data to the users browser.
+Ruby on Rails is one of many examples of an M-V-C architectural pattern. This pattern has become very popular due to its ease of collaboration between developers, rapid application development and updating, quick addition of new features to existing applications and simplification of debugging as all the components are separated when written properly. The idea of MVC is to split your application into 3 components; Models, Views and Controllers. Each component has a specific purpose, Models handle data storage/structure and interaction with the database, Views handle all the page layout and user interaction, and Controllers handle all the business logic/functions of your application. Rails is a convention over configuration framework, which requires developers to follow a specific set of rules when creating their application allowing in-built functions and relationships to be established very quickly. However, if you were to deviate from these standards, you will face errors until you correct it back to the Rails way. Rails web applications are often hosted on a web-server such as Puma, and operate by routing HTTP requests send from a users machine over the internet to specified controllers and functions of your application which will return the appropriate data to the users browser.
 
 **Ref**:
 
 - https://www.interserver.net/tips/kb/mvc-advantages-disadvantages-mvc/
+
+### Question 2
+
+**Identify** a database management system (DBMS) commonly used in web applications (including Rails) and discuss the pros and cons of this database.
 
 **SQLite**
 
@@ -53,7 +57,7 @@ SQLite is an open-source Relational Database Management System which boasts the 
 
 Provide an **overview** and **description** of a standard source control workflow.
 
-Source/version control has become a crucial part in the software development cycle and collaboration of multiple developers. With more than one person working on an application, alterations to files can get out of hand very quickly. This is where the implementation of Source Control Management comes in. The normal workflow of a source control starts with the creation of a repository, this is where all the files associated with the application are held. The master branch is then defined which is where final changes from developers are pushed when the code is confirmed to be appropriate and reliable. Each developer can create their own branch, where they can work on the tasks they have been assigned without affecting the other developers' work. Once the team is happy with a new function or module, they can merge their branches into a testing branch or the master branch, where the version control will sort through all the changes made and gracefully mesh them together.
+Source/version control has become a crucial part in the software development cycle and collaboration of multiple developers. With more than one person working on an application, alterations to files can get out of hand very quickly. This is where the implementation of Source Control Management comes in. The normal workflow of a source control starts with the creation of a repository, this is where all the files associated with the application are held. The master branch is then defined which is where final changes from developers are pushed when the code is confirmed to be appropriate, reliable and production ready. Each developer can create their own branch, where they can work on the tasks they have been assigned without affecting the other developers' work. Once the team is happy with a new function or module, they can merge their branches into a testing branch or the master branch, where the version control will sort through all the changes made and gracefully mesh them together, providing there are no conflicts between files.
 
 **Ref**:
 
@@ -113,12 +117,27 @@ Businesses may need to abide by guidelines outlined in the Privacy Act 1988 give
 - "Security of Personal Information": Implementing appropriate measures to secure sensitive information from malicious attacks.
 - "Anonymity and pseudonymity": Enabling users to operate within your domain anonymously or under a pseudonym.
 
-Due to the small nature of my project, in a legal sense, I don't have to go overboard with protecting user data. I am mainly concerned with account passwords and payment/transaction information. Because the gems I plan to use have inbuilt methods of adequately protecting this information, my responsibilities have been met. I could allow users to have a custom Username, aside from their name for the shipping address, which would abide closer to the guidlines outlined in the Privacy Act.
+Due to the small nature of my project, in a legal sense, I don't have to go overboard with protecting user data. I am mainly concerned with account passwords and payment/transaction information. Because the gems I plan to use have inbuilt methods of adequately protecting this information, my responsibilities have been met. I could allow users to have a custom username, aside from their name for the shipping address, which would abide closer to the guidlines outlined in the Privacy Act.
 
 __Ref__:
 - https://www.business.gov.au/Risk-management/Cyber-security/How-to-protect-your-customers-information
 - https://www.oaic.gov.au/assets/privacy/guidance-and-advice/app-quick-reference-tool.pdf
 
+### Question 9 
+
+**Describe** the structural aspects of the relational database model. Your description should include information about the structure in which data is stored and how relations are represented in that structure.
+
+The relational database model is featured in some of the most popular Database Management Systems used today. It has many advantages to its composition such as its query flexibility, making complex search queries easy for developers and users. Relational databases also make use of normalization to make it easy to read data within the database.
+
+Relational databases are made up of a few concepts:
+- Tables: Every data input is stored in a row of a specific table, and every attribute is defined by the columns of the table.
+- Columns/Attributes: Each column in a table represents a certain attribute value of every data entry. (Eg, for a Users table, columns would include: Username, Email, Password)
+- Primary Key: Every table has a column for a unique identifying number for each row/tuple. This is the tables Primary Key, and its used for referencing any specific row in a table ie. Search queries, deleting specific rows etc.
+- Foreign Key: This is a colum within a table that references the Primary Key of ANOTHER table. This can be used for creating relationships between table rows (eg. A book table might have a Foreign Key for an Author table.)
+- Tuples/Rows: This is where each unique data input is stored. Every row within a table holds the attribute values for a single Object.
+
+__Ref__:
+- https://www.guru99.com/relational-data-model-dbms.html
 ### Question 10
 
 **Describe** the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
@@ -141,6 +160,16 @@ __Ref__:
 - https://www.promptcloud.com/blog/7-steps-to-improve-data-integrity/
 - https://afteracademy.com/blog/what-is-data-integrity
 
+### Question 12
+
+**Identify** and **explain** the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+
+
+
+### Question 13
+
+**Identify** and **explain** the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+
 ### Question 14
 
 Conduct **research** into a marketplace website (app) and answer the following parts:
@@ -161,7 +190,7 @@ The tech stack utilised by Reverb.com includes:
 
 **b. Describe the hardware used to host the app.**
 
-Hardware used to host this web application is the same as any:
+According to StackShare.io, Reverb.com is hosted using nginx.
 
 - Processor (CPU): The CPU is responsible for all logic processing within an application. In order to provide users with a responsive and enjoyable experience when using the software, it is important to consider the type and speed of processer to use for your platform. If the selected processer is not rated to handle the traffic that your application generates, it can lead to stalling and potentially errors during peak usage.
 - Memory (RAM): RAM is where all the momentary data is stored during the operation of your application. All of your business functions will interect with this memory to perform its functions, and the performance of your application is directly dependent on the speed and size of the RAM available.
