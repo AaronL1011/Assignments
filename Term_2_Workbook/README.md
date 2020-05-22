@@ -188,6 +188,18 @@ Bubble Sort is one of the most basic sorting algorithms with a very simple metho
 
 Quick Sort is a much more efficient algorithm than the prior, and operates in a slightly more complicated fashion. This algorithm starts by choosing a pivot point (where the point is doesnt really matter), then the idea is to arrange the elements LESS than the chosen point to the left of the pivot, and the values GREATER than the pivot to the right! This process is continued with new pivot points until a sorted array is returned. This algorithm has a time complexity of O(n log n) or logarithmic/linearithmic time. This means that execution time for the sort grows in proportion to the logarithm of the set size. The first 'n' in 'n log n' is often ignored due to it being a fairly trivial effect to the running time when the set size is very large, we are mainly focussed on the 'log n'. Each time through the loop, the data set to search or sort is halved, so in a worst case, the algorithm will require log n steps.
 
+**Comparison**
+
+Domain: A set of 10 items, very small scale.
+Number of steps to sort with Bubble: O(10^2) = 100
+Number of steps to sort with Quick: O(10 * log2(10)) = 40
+
+Domain: A set of 10,000 items.
+Number of steps to sort with Bubble: O(10000^2) = 100,000,000
+Number of steps to sort with Quick: O(10000 * log2(10000)) = 140,000
+
+As you can see, the difference in steps between the two alorithms changes drastically as you increase the set size, highlighting the importance of a good algorithm.
+
 __Ref__:
 - https://www.geeksforgeeks.org/bubble-sort/
 - https://medium.com/human-in-a-machine-world/quicksort-the-best-sorting-algorithm-6ab461b5a9d0
@@ -199,7 +211,24 @@ __Ref__:
 
 **Linear Search**
 
+Linear Search algorithms are very straight forward, start from the beginning on a data set, and move through value by value until you find a match then return the index position of that match. No suprise, the time complexity is linear or O(n), the algorithm execution time grows directly with the set size. This is a pretty good time complexity, however its not the most efficient method to find a value in a set. Imagine the set is a million items long, and the value you're looking to match with is the last in the set, it will require the maximum execution time to find it. Realistically, it wouldnt take that long to find, but there are better ways to possibly find it faster.
+
+
 **Binary Search**
+
+Binary Search used the "Divide and Conquer" method of searching. This algorithm searches a sorted array by starting at the mid-point and recursively dividing the set in half, depending on if the value being searched for is higher or lower than the current midpoint. If the value is higher than the current midpoint, the set will halve to a new set, starting from the mid-point to the end of the original set. A new mid-point is set, and the same function is run until the mid-point matches the desired value, and it is then returned. The same concept applies if the value is smaller than the midpoint, the new array will just start from the beggining of the set, and end at the previous midpoint of the last set. This sorting algorithm manages a time complexity of O(Log n), as every time the set is searched, the set size is halved until a match is found. This proves much more effective in larger data-sets.
+
+**Comparison**
+
+Domain: A sorted set of 10 numbers.
+Number of steps to sort with Linear: O(10) = 10
+Number of steps to sort with Binary: O(log2 10) = 4
+
+Domain: A sorted set of 10,000 numbers.
+Number of steps to sort with Linear: O(10000) = 10000
+Number of steps to sort with Quick: O(log2(10000)) = 14
+
+Once again, very large difference in steps once the data sets reach a large enough amount, and the difference only gets bigger and bigger. This example as well as the previous sort example proves how crucial an appropriate algorithm is when your application is handling extremely large sets of data.
 
 
 ### Question 14
