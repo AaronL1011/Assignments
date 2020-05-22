@@ -167,20 +167,40 @@ __Ref__:
 
 Manipulation within a relational database is handled in two fashions; Relational Assignment Operators, and Relational Algebra.
 
-Relational Assignment Operator is how updates to data entries are handled. The INSERT operator is used to insert single or multiple records into a table. UPDATE is used to alter attributes with new values defined by the query. DELETE is used to destroy single or multiple records from a table. The last main operator is SELECT, which is used to retrieve records from a database. This operator can be combined with specific conditions to filter the records that are returned, ie. ```SELECT * FROM table_name WHERE x > 10``` This query will return all records from table_name where the x attribute is greater than 10. Very useful for developers who want a certain set of data returned from a database.
+Relational Assignment Operator is how updates to data entries are handled. The INSERT operator is used to insert single or multiple records into a table. UPDATE is used to alter attributes with new values defined by the query. DELETE is used to destroy single or multiple records from a table. The last main operator is SELECT, which is used to retrieve records from a database. This operator can be combined with specific conditions to filter the records that are returned, ie. ```SELECT * FROM table_name WHERE x > 10``` This query will return all records from the  table_name table, where the x attribute is greater than 10. Very useful for developers who want a certain set of data returned from a database.
 
 Relational algebra makes use of concepts such as Set Theory to compare and retrieve new relations from old ones. Common ideas such as Intersect and Difference will return a corresponding set of relations from the comparison of two other sets of relations. Queries such as Union will return all tuples within either or both of two seperate sets of records.
 
+__Ref__:
+- https://www.oreilly.com/library/view/sql-and-relational/9781449319724/ch01s04.html
+- http://etutorials.org/SQL/SQL+Bible+Oracle/Part+IV+Retrieving+and+Transforming+Data/Chapter+11+SQL+Operators/Assignment+Operator/
+- https://www.w3resource.com/sql
 
 ### Question 12
 
 **Identify** and **explain** the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) 
 
+**Bubble Sort**
 
+Bubble Sort is one of the most basic sorting algorithms with a very simple method of sorting. The basic idea is that bubble sort performs multiple passes on a data set, swapping adjacent values if they arent in the correct order. Once all values are in order, the algorithm will stop its passes and return the sorted set. The time complexity for this sorting algorithm is known as Quadratic or O(n^2). What this means is that for n (the number of items in a set), the number of steps required to sort the entire set is n squared. This isn't a very practical sorting algorithm, because as the size of your set increases, the amount of time required to complete the sort increases rapidly, and will often render applications useless after a certain data size. This quadratic time complexity is common for any algorithm that makes use of nested loops.
+
+**Quick Sort**
+
+Quick Sort is a much more efficient algorithm than the prior, and operates in a slightly more complicated fashion. This algorithm starts by choosing a pivot point (where the point is doesnt really matter), then the idea is to arrange the elements LESS than the chosen point to the left of the pivot, and the values GREATER than the pivot to the right! This process is continued with new pivot points until a sorted array is returned. This algorithm has a time complexity of O(n log n) or logarithmic/linearithmic time. This means that execution time for the sort grows in proportion to the logarithm of the set size. The first 'n' in 'n log n' is often ignored due to it being a fairly trivial effect to the running time when the set size is very large, we are mainly focussed on the 'log n'. Each time through the loop, the data set to search or sort is halved, so in a worst case, the algorithm will require log n steps.
+
+__Ref__:
+- https://www.geeksforgeeks.org/bubble-sort/
+- https://medium.com/human-in-a-machine-world/quicksort-the-best-sorting-algorithm-6ab461b5a9d0
+- https://adrianmejia.com/most-popular-algorithms-time-complexity-every-programmer-should-know-free-online-tutorial-course/
 
 ### Question 13
 
 **Identify** and **explain** the workings of TWO search algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+
+**Linear Search**
+
+**Binary Search**
+
 
 ### Question 14
 
