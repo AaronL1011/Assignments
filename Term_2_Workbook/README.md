@@ -138,6 +138,7 @@ Relational databases are made up of a few concepts:
 
 __Ref__:
 - https://www.guru99.com/relational-data-model-dbms.html
+
 ### Question 10
 
 **Describe** the integrity aspects of the relational database model. Your description should include information about the types of data integrity and how they can be enforced in a relational database.
@@ -160,9 +161,20 @@ __Ref__:
 - https://www.promptcloud.com/blog/7-steps-to-improve-data-integrity/
 - https://afteracademy.com/blog/what-is-data-integrity
 
+### Question 11
+
+**Describe** the manipulative aspects of the relational database model. Your description should include information about the ways in which data is manipulated (added, removed, changed, and retrieved) in a relational database.
+
+Manipulation within a relational database is handled in two fashions; Relational Assignment Operators, and Relational Algebra.
+
+Relational Assignment Operator is how updates to data entries are handled. The INSERT operator is used to insert single or multiple records into a table. UPDATE is used to alter attributes with new values defined by the query. DELETE is used to destroy single or multiple records from a table. The last main operator is SELECT, which is used to retrieve records from a database. This operator can be combined with specific conditions to filter the records that are returned, ie. ```SELECT * FROM table_name WHERE x > 10``` This query will return all records from table_name where the x attribute is greater than 10. Very useful for developers who want a certain set of data returned from a database.
+
+Relational algebra makes use of concepts such as Set Theory to compare and retrieve new relations from old ones. Common ideas such as Intersect and Difference will return a corresponding set of relations from the comparison of two other sets of relations. Queries such as Union will return all tuples within either or both of two seperate sets of records.
+
+
 ### Question 12
 
-**Identify** and **explain** the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O)
+**Identify** and **explain** the workings of TWO sorting algorithms and discuss and compare their performance/efficiency (i.e. Big O) 
 
 
 
