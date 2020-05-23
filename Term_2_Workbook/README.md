@@ -262,15 +262,17 @@ According to StackShare.io, Reverb.com is hosted using nginx.
 
 **c. Describe the interaction of technologies within the app.**
 
-
+The majority of data for the web-application is held by Amazon EC2, every time a client wants to visit the Reverb website, they will be visiting the IP address of the EC2 instance. Nginx will recieve all HTTP requests from client machines and pass them through to the Rails framework. This is where rails will perform its magic and decide where to route the incoming request. If an object is required, Rails will talk to PostgreSQL and find the appropriate tuple(s). This data is then returned to Rails where it can perform whatever functions it needs to, and then send response data back to the client machine via Nginx and the World Wide Web. 
 
 **d. Describe the way data is structured within the app**
 
-Data within Reverb.com is structured using the Relational Database Model imposed by PostgreSQL. Each object within the application required a table. Every attribute for an object is defined by the colums of the table, and every tuple is stored as a row within the corresponding table. 
+Data within Reverb.com is structured using the Relational Database Model imposed by PostgreSQL. Each object within the application requires a table. Every attribute for an object is defined by the colums of the table, and every tuple is stored as a row within the corresponding table. Relations between models are columns defined by the developer. (Eg. A Listings table would have a relation/reference column for a User_ID, as a Listing belongs to the User that posted it.)
 
 **e. Identify entities which must be tracked by the app**
 
-Users, Listings, Catagories, Seller Reviews, Watch List, Shopping Cart, Transaction History, Feed, Messages, Addresses
+In order for a Rails web application to function at all, the developer needs to define all the objects/models required for the operation of each feature they have planned. Entities required for Reverb.com may include:
+
+Users, Listings, Catagories, Seller Reviews, Watch List, Shopping Cart, Transaction History, Feed, Messages and Addresses
 
 **f. Identify the relationships and associations between the entities you have identified in part (e)**
 
