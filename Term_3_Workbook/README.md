@@ -101,10 +101,22 @@ This function will log numbers from 0 to 9 into the console. Once i is increment
 Explain type coercion, using examples from the JavaScript programming language
 
 **Type Coercion** is the conversion of a value from one data type into another. There are two types of Type Coercion: Explicit and Implicit.
-Explicit Type Coercion is when the conversion of types is expressed with a method designed to do so. In ruby an example would be the .to_s, .to_i, and .to_a methods, eg. 100.to_s would convert to a string of "100".
+Explicit Type Coercion (or type casting) is when the conversion of types is expressed with a method designed to do so.
+
+```javascript
+Number(value); //  an explicit method to convert the value variable to a Number data type.
+```
 
 Implicit conversion is automatically handled by the language compiler when you apply operators to values of different compatible types,
-eg. 5 \* 2.0 = 10.0 (int to float), or '5' - 5 will return 0 (str to int). Some strong typed languages do not support this. If incompatible data types are used together, the compiler will often return a Logic Error.
+
+```javascript
+'true' == true; // evaluates true
+false == 'false'; // evaluates true
+```
+
+Here we see the javascript compiler using implicit coersion to evaluate these statements to true. In order to force an explicit comparison, we have two use triple equals `'true' === true`.
+
+Some strong typed languages do not support this. If incompatible data types are used together, the compiler will often return a Logic Error.
 
 ### Question 9
 
