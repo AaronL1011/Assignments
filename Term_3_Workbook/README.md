@@ -6,7 +6,7 @@
 
 ### Question 1
 
-**Provide an **overview and description** of a standard source control process for a large project**
+_Provide an **overview and description** of a standard source control process for a large project_
 
 Source/version control has become a crucial part in the software development cycle. With a large project, you often have a high number of developers collaborating on the same file system. This is where the implementation of a source control system can aid in the ease of workflow with the amount of changes being made at once. As each developer tackles their tasks for the day, they create branches to test their local changes, without directly affecting the master branch. Once a feature or bug-fix has been tested and confirmed suitable for production, it is merged into the master branch, and its branch is deleted. This allows for safe code testing for multiple developers at once, without destroying the file system.
 
@@ -17,11 +17,10 @@ _"Source control (or version control) is the practice of tracking and managing c
 **Ref**:
 
 - https://aws.amazon.com/devops/source-control/#:~:text=Source%20control%20(or%20version%20control,merging%20contributions%20from%20multiple%20sources.
--
 
 ### Question 2
 
-**What are the most important aspects of quality software?**
+_What are the most important aspects of quality software?_
 
 Quality software is often defined by the condition of the code that comprises it. By following only a few simple guidelines, you can increase your code integrity and the performance of your application.
 
@@ -31,7 +30,7 @@ Quality software is often defined by the condition of the code that comprises it
 
 ### Question 3
 
-Outline a standard high level structure for a MERN stack application and explain the components
+_Outline a standard high level structure for a MERN stack application and explain the components_
 
 A standard MERN stack application implements four technologies to create responsive and quick web applicaitons. MongoDB is the database solution, Express.js is the api/web framework, React is used for responsive front-end design, and Node.js is the javascript package manager that ties it all together.
 
@@ -45,10 +44,11 @@ A standard MERN stack application implements four technologies to create respons
 - https://stackoverflow.com/questions/12616153/what-is-express-js
 - https://reactjs.org/tutorial/tutorial.html
 - https://www.tutorialspoint.com/nodejs/nodejs_introduction.htm
+- https://www.mongodb.com/what-is-mongodb
 
 ### Question 4
 
-A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?
+_A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?_
 
 **Technical Skills**
 
@@ -60,15 +60,19 @@ Interaction with the client or business makes up the majority of the development
 
 ### Question 5
 
-With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges
+_With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges_
+
+The project I chose for this question is a personal side-project I have created, AnonConnectr, a developer oriented social media platform (http://anon-connect.herokuapp.com). This project is built on the MERN stack and hosted with Heroku. This was challenging, as it required me to learn new technologies that I hadn't previously toyed with (exactly why I did the project in the first place). I had to learn the technical skills of utilizing MongoDB, React, Express and NodeJS to build each component and function of the application. This was both alot of fun, and very challenging. Learning how each of these technologies ties together to create responsive and scalable web-applications was a welcome experience, and has definitely helped to solidify my knowledge. Firstly, learning how to compile an application with Node was the first challenge met. This involved creating a new Node app and defining all the details and licensing information, then installing each other package as required. First on the list was Express, the framework driving the entire application. I used Express to structure my components into the MVC architecture and define the routing for all the requests and API's. Then I worked with MongoDB Atlas to link up with my application, and store all objects and data as JSON objects within a NoSQL database. React is then implemented to create all my front-end components and user interface. Finally I used Heroku CLI to deploy the application to a production build.
 
 ### Question 6
 
-With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature
+_With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature_
+
+The project I have chosen for this question is my Portfolio Website (http://aaronlewis.io). This was one project that I was fairly comfortable with since the beginning, as I have knowledge and previous experience with the creation of basic websites that don't require large amounts of logic. My experience with HTML, CSS and basic JavaScript made the formatting and styling of this website very easy, and I found my only downfall at the time was more on the documentation side of things. In future projects, I have found it very worth-while to really buckle down on the project planning stage, and carve out a pathway for my programming to follow. The use of Wireframes, Sitemaps, ERD's and Control Flow Diagrams makes implementing the code logic incredibly simple, its basically just following the steps you've already written for yourself. Using appropriate planning also helps maintain some form of consistency within your website/application, resulting in a more polished project in the end.
 
 ### Question 7
 
-Explain control flow, using an example from the JavaScript programming language
+_Explain control flow, using an example from the JavaScript programming language_
 
 In regards to programming languages, control flow is the order of operations that will be executed. This includes statements, assignments and method calls. Certain programming languages have different Control Flow Statements, which determines which line of code is being run in a program at any time. An example includes:
 
@@ -98,7 +102,7 @@ This function will log numbers from 0 to 9 into the console. Once i is increment
 
 ### Question 8
 
-Explain type coercion, using examples from the JavaScript programming language
+_Explain type coercion, using examples from the JavaScript programming language_
 
 **Type Coercion** is the conversion of a value from one data type into another. There are two types of Type Coercion: Explicit and Implicit.
 Explicit Type Coercion (or type casting) is when the conversion of types is expressed with a method designed to do so.
@@ -120,7 +124,7 @@ Some strong typed languages do not support this. If incompatible data types are 
 
 ### Question 9
 
-Explain data types, using examples from the JavaScript programming language
+_Explain data types, using examples from the JavaScript programming language_
 
 **Data Types** for most languages can be catagorized into three different forms: Strings, Numbers and Booleans. These different types tell the compiler/interpreter how to handle the data assigned to that type.
 
@@ -148,19 +152,19 @@ myOtherBoolean = false;
 
 ### Question 10
 
-Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language
+_Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
 ### Question 11
 
-Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language
+_Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
 ### Question 12
 
-Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language
+_Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
 ### Question 13
 
-For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes
+_For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes_
 
 ```javascript
 class Car {
@@ -206,3 +210,5 @@ for (model of models) {
   console.log(mycar.show()); // Logs the newly created object to the console, before going back to the start of the current loop.
 }
 ```
+
+I didn't appreciate that last half of code.
