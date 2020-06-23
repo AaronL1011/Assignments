@@ -25,8 +25,34 @@ _What are the most important aspects of quality software?_
 Quality software is often defined by the condition of the code that comprises it. By following only a few simple guidelines, you can increase your code integrity and the performance of your application.
 
 - DRY: Dont Repeat Yourself. By reducing the amount of repetitive functions, variable setting and logic statements, you are ensuring the long life of the software. Maintenance of software systems that havent adheared to the DRY principle is a nightmare. By not repeating yourself, you are reducing the number of variables you need to think about when making changes to the system.
-- Time Complexity: When writing functions, consider the time complexity in its current state and if it can be improved. This ensures scalability if your application is suddenly handling more data than expected. Poor time complexity will lead to the system bogging down under the execution time of all these new calls.
+- Time Complexity/Efficiency: When writing functions, consider the time complexity in its current state and if it can be improved. This ensures scalability if your application is suddenly handling more data than expected. Poor time complexity will lead to the system bogging down under the execution time of all these new calls.
 - Structured Code: When writing an application, the codebase should be organised according to the components they create. By adding breaks and whitespace to code, it improves the readability of each function, making each seperate function distinct from the others.
+- Clear Variable and Function Names. One key aspect of quality software is the readibility of the code itself. An easy way to ensure your code is clean and readable, use descriptive names when initialising variables. For example:
+
+```javascript
+function firstFunction(number) {
+  return (number * 9) / 5 + 32;
+}
+```
+
+Versus
+
+```javascript
+function convertCelciusToFarenheit(tempInCelcius) {
+  let farenheit = (tempInCelcius * 9) / 5 + 32;
+  return farenheit;
+}
+```
+
+If youre familiar with the conversion process of temperatures, you may have been able to figure out the purpose of the first function. However, the average developer would have a far easier time recognising the purpose of the second function, as its clearly stated in the name of the function, and all values used are labelled appropriately.
+
+- Testability. Your software should be written in a manner that allows the functionality to be easily testable. This allows for confirmation that the program performs as expected in any environment, very important for a production release with any large userbase.
+- Security. Providing your software is handling any form of user data or private information, it is very important to consider the level of security you have implemented into the application. Both from a legal and moral stand-point, the security of your user data is the responsibility of the team behind the software. Quality software will have taken into account the appropriate requirements for the project, and carried out the tasks to meet the security needs.
+
+**Ref**:
+
+- "Clean Code: A Handbook of Agile Software Craftsmanship" - Robert C. Martin
+- https://www.silasreinagel.com/blog/2016/11/15/the-seven-aspects-of-software-quality/
 
 ### Question 3
 
@@ -154,13 +180,25 @@ myOtherBoolean = false;
 
 _Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
+**Ref**:
+
+- https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php
+
 ### Question 11
 
 _Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
+**Ref**:
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+
 ### Question 12
 
 _Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language_
+
+**Ref**:
+
+- https://javascript.info/json
 
 ### Question 13
 
@@ -193,7 +231,7 @@ class Model extends Car {
 }
 
 let makes = ['Ford', 'Holden', 'Toyota']; // Defining a variable and setting it to an array of three strings.
-let models = Array.from(new Array(40), (x, i) => i + 1980); // Defining a models variable to an array of numbers from 1980 to 2019.
+let models = Array.from(new Array(40), (x, i) => i + 1980); // Defining a models variable to an array of 40 numbers from 1980 to 2019.
 
 function randomIntFromInterval(min, max) {
   // Defining a function to generate a random integer that takes in two arguments, min and max.
