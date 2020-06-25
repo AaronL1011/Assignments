@@ -124,7 +124,7 @@ function loopControlFlow() {
 }
 ```
 
-This function will log numbers from 0 to 9 into the console. Once i is incremented up to 10, the middle condition of the for loop is met, and the loop ends.
+This function will log numbers from 0 to 9 into the console. Once i is incremented up to 10, the condition of the for loop is met, the loops breaks and continues to execute the code after the loop.
 
 ### Question 8
 
@@ -180,21 +180,169 @@ myOtherBoolean = false;
 
 _Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
+Arrays in JavaScript allow you to store a collection of values within a single variable. This comes in the form of a list, with an index starting at 0. JavaScript comes natively with a plethora of methods for manipulating arrays. Some of these methods are known as mutating methods, meaning they directly alter the array, where-as non-mutating methods produce a new array. Some examples of mutating an array include:
+
+- push(): This method is used to add new values to the end of an array.
+
+```javascript
+let array = [];
+array.push(4);
+array.push(6);
+array.push(8);
+console.log(array); // prints [4, 6, 8] to the console
+```
+
+- unshift(): This method also adds items to an array, however it will add them to the beginning.
+
+```javascript
+let array = [];
+array.unshift(4);
+array.unshift(6);
+array.unshift(8);
+console.log(array); // prints [8, 6, 4] to the console
+```
+
+- pop(): This will remove the last element from the array, and return it.
+
+```javascript
+let array = [4, 5, 6];
+array.pop(); // will return 6, and array will now be [4, 5]
+```
+
+As for non-mutating array methods, some include:
+
+- map(): This maps through each value of an array, and will produce a new array with the range of performing a certain function with each value of the original.
+
+```javascript
+let array = [3, 4, 5, 6];
+console.log(
+  array.map((number) => {
+    return number * 2;
+  })
+); // logs [6, 8, 10, 12] without affecting the value of array
+```
+
+- filter(): This method is used to create a new array from the domain array, where the only values passed over are ones that meet a certain criteria.
+
+```javascript
+let arrayOne = [3, 4, 5, 6, 7, 8, 9];
+console.log(arrayOne.filter((value) => value % 3 === 0)); // This returns [3, 6, 9] as only the numbers divisible by 3 are passed through to the new array.
+```
+
+Another important concept to note with manipulating arrays is Pass by Reference. In JavaScript, Arrays are passed as a memory reference when copying one array variable to another. For example:
+
+```javascript
+let arrayOne = ['cat', 'dog', 'rat', 'frog'];
+let arrayTwo = arrayOne;
+
+arrayTwo[1] = 3;
+
+console.log(arrayOne); // ['cat', 3, 'rat', 'frog']
+console.log(arrayTwo); // ['cat', 3, 'rat', 'frog']
+```
+
+Here we can see the changes made to the 'copy' of the initial array are also affecting the original. Very important to keep in mind when handling many arrays.
+
 **Ref**:
 
 - https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php
+- https://lorenstewart.me/2017/01/22/javascript-array-methods-mutating-vs-non-mutating/
 
 ### Question 11
 
 _Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
+This majority of functional JavaScript programming revolves around the use of Objects. Objects are structures which utilize key-value pairs to store data. Objects can be created and manipulated in multiple ways within JavaScript beginning with an 'Object Literal'. This looks like:
+
+```javascript
+let car = {
+  make: 'Honda',
+  model: 'Civic',
+  year: 2009,
+  body: 'hatchback'
+};
+```
+
+This object literal is the creation of a single object with 4 defined properties: make, model, year and body style. As this is only one instance of an object, its uses are limited for a larger scale. This is where Constructor Objects come in handy:
+
+```javascript
+function Car(make, model, year, body) {
+  this.make = make;
+  this.model = model;
+  this.year = year;
+  this.body = body
+
+  beepHorn() {
+    console.log('Beep beep');
+  }
+}
+
+let myCar = new Car('Honda', 'Civic', 2009, 'hatchback')
+```
+
+The implimentation of a function to create our objects for us, has allowed the quick and easy initialisation of as many objects as we want.
+
+To access and/or manipulate the data within out object, you reference the name we set the object variable as, with a method or property attached. Eg:
+
+```javascript
+console.log(myCar.model); // 'Civic'
+myCar.beepHorn(); // logs 'Beep beep'
+```
+
+Much like arrays, Objects also follow Pass by Reference. If you set one variable as another, modifying the copy will also modify values within the original Object. For example:
+
+```javascript
+const countryCodes = {
+  au: 'Australia',
+  ie: 'Ireland',
+  jp: 'Japan',
+  us: 'United States of America'
+};
+let newObject = countryCodes;
+newObject.au = 'Aussie';
+console.log(countryCodes);
+/* Logs:
+{
+  au: 'Aussie',
+  ie: 'Ireland',
+  jp: 'Japan',
+  us: 'United States of America'
+}
+*/
+```
+
 **Ref**:
 
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+- https://medium.com/@TK_CodeBear/manipulating-objects-in-javascript-59fefeb6a738
+- https://www.freecodecamp.org/news/copying-stuff-in-javascript-how-to-differentiate-between-deep-and-shallow-copies-b6d8c1ef09cd/#:~:text=A%20deep%20copy%20means%20that,into%20how%20JavaScript%20stores%20values
 
 ### Question 12
 
 _Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language_
+
+JSON or JavaScript Object Notation is a lightweight way of passing data between applications or API's. It involves passing full objects in the form of a single string of text, sorted into key-value pairs. Within JavaScript, we have access to a few methods for handling this type of data, and converting between usable Objects and JSON strings.
+
+In order to convert a JavaScript object into JSON, we can make use of the JSON.stringify() method. Example:
+
+```javascript
+const myObject = {
+  text: 'hello world',
+  date: '25/02/2020'
+};
+var jsonString = JSON.stringify(myObject);
+// This will return: {"text":"hello world","date":"25/02/2020"}
+```
+
+In contrast, in order to make use of a JSON string, we need to convert it to a JavaScript object, which can be achieved with the parse() method.
+
+```javascript
+let jsonObject = '{"text":"hello world","date":"25/02/2020"}';
+let newObject = JSON.parse(jsonObject);
+console.log(newObject.text); // 'hello world'
+```
+
+This takes our stringed object, and converts it into the appropriate key-value pairs within a JavaScript object, available for manipulating just like any other object.
 
 **Ref**:
 
