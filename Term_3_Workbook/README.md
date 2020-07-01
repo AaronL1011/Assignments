@@ -27,7 +27,7 @@ Quality software is often defined by the condition of the code that comprises it
 - DRY: Dont Repeat Yourself. By reducing the amount of repetitive functions, variable setting and logic statements, you are ensuring the long life of the software. Maintenance of software systems that havent adheared to the DRY principle is a nightmare. By not repeating yourself, you are reducing the number of variables you need to think about when making changes to the system.
 - Time Complexity/Efficiency: When writing functions, consider the time complexity in its current state and if it can be improved. This ensures scalability if your application is suddenly handling more data than expected. Poor time complexity will lead to the system bogging down under the execution time of all these new calls.
 - Structured Code: When writing an application, the codebase should be organised according to the components they create. By adding breaks and whitespace to code, it improves the readability of each function, making each seperate function distinct from the others.
-- Clear Variable and Function Names. One key aspect of quality software is the readibility of the code itself. An easy way to ensure your code is clean and readable, use descriptive names when initialising variables. For example:
+- Clear Variable and Function Names: One key aspect of quality software is the readibility of the code itself. An easy way to ensure your code is clean and readable, use descriptive names when initialising variables. For example:
 
 ```javascript
 function firstFunction(number) {
@@ -46,8 +46,8 @@ function convertCelciusToFarenheit(tempInCelcius) {
 
 If youre familiar with the conversion process of temperatures, you may have been able to figure out the purpose of the first function. However, the average developer would have a far easier time recognising the purpose of the second function, as its clearly stated in the name of the function, and all values used are labelled appropriately.
 
-- Testability. Your software should be written in a manner that allows the functionality to be easily testable. This allows for confirmation that the program performs as expected in any environment, very important for a production release with any large userbase.
-- Security. Providing your software is handling any form of user data or private information, it is very important to consider the level of security you have implemented into the application. Both from a legal and moral stand-point, the security of your user data is the responsibility of the team behind the software. Quality software will have taken into account the appropriate requirements for the project, and carried out the tasks to meet the security needs.
+- Testability: Your software should be written in a manner that allows the functionality to be easily testable. This allows for confirmation that the program performs as expected in any environment, very important for a production release with any large userbase.
+- Security: Providing your software is handling any form of user data or private information, it is very important to consider the level of security you have implemented into the application. Both from a legal and moral stand-point, the security of your user data is the responsibility of the team behind the software. Quality software will have taken into account the appropriate requirements for the project, and carried out the tasks to meet the security needs.
 
 **Ref**:
 
@@ -60,10 +60,10 @@ _Outline a standard high level structure for a MERN stack application and explai
 
 A standard MERN stack application implements four technologies to create responsive and quick web applicaitons. MongoDB is the database solution, Express.js is the api/web framework, React is used for responsive front-end design, and Node.js is the javascript package manager that ties it all together.
 
-- MongoDB: MongoDB is a NoSQL database that uses JSON type objects to store and retrieve data for a web-application. This allows our applications to have persistent data for each object in our system, such as Users, Profiles, Posts, Likes, Comments etc.
-- Express.js: A web application framework similar to the likes of Ruby on Rails. Built for Node.js, it allows for the interaction of models within an application. Express helps to organise your application into an MVC structure and is the backbone of any logic being performed.
-- React: React is a front-end JavaScript package installed via Node.js for building user interfaces. It allows for flexible creation and modification of visual components within your application. It acts as a very complex yet efficient platform for responsive web design.
-- Node.js: Node is a Package Manager that allows for the integration and interaction of multiple components written in Javascript, and the ability to run Javascript outside of a browser. This has proven to be a very effective way to create extremely scalable web applications.
+- MongoDB: MongoDB is a NoSQL database that uses JSON strings to store and retrieve data for a web-application. This allows our applications to have persistent data for each object in our system, such as Users, Profiles, Posts, Likes, Comments etc. Javascript Objects are converted into a JSON string for storage, and once needed again, parsed back into a regular Javascript Object.
+- Express.js: A web application framework similar to the likes of Ruby on Rails. Built for Node.js, it allows for the interaction of models and routes within an application. Express helps to organise your application into an MVC structure and is the backbone of any logic being performed.
+- React: React is a front-end JavaScript package installed via Node.js for building user interfaces. It allows for flexible creation and modification of visual components within your application. It acts as a very complex yet efficient platform for responsive web design and state management.
+- Node.js: Node is a Package Manager that allows for the integration and interaction of multiple libraries written in Javascript, and the ability to run Javascript outside of a browser. This has proven to be a very effective way to create extremely scalable web applications.
 
 **Ref**:
 
@@ -78,23 +78,46 @@ _A team is about to engage in a project, developing a website for a small busine
 
 **Technical Skills**
 
-Depending on the type of website being created, this team may require knowledge of certain programming languages. If the website is fairly static and doesn't use any logic, the team would only require knowledge of HTML and CSS to create an adequate solution. If the website is going to be carrying out logic and performing actions, they will also require knowledge of JavaScript. If the website is going to be even more complex, or highly scaleable, it may be worth looking at more javascript libaries and tech stacks. Testing skills may also be required depending on the complexity of the functions within the application.
+Depending on the type of website being created, this team may require knowledge of certain programming languages. These days, websites come in many different forms, each requiring a different skill set. A basic web-page can be created quite easily with minimal knowledge required. However if this small business is wanting a large-scale web application, this will obviously require knowledge of more technologies.
+
+- Basic Web Technologies: For a simple website used for displaying some text and graphics etc, HTML and CSS could be the only real requirements to learn in order to complete the project. With these languages, you can achieve a very polished looking website that can display whatever information the client desires, however functionally, it will be quite limited. To combat this, it may pay to learn some JavaScript, which has the ability to add vast amounts of logic and other functions to your website, expanding its technical limitations.
+- Web Frameworks: This is where the project turns from a website, into a web-application. If the client requires a more advanced and capable web presence, it may be time to look at a framework like Ruby on Rails, Django or Express. These technologies employ MVC architecture to break down components of a web application, and enable interaction between them. While it is a steeper learning curve than the basic Web languages, the pay off is a vastly improved functionality of the web application.
+- Front-end Technologies: Libraries such as React enable developers to create extremely responsive and scalable user interfaces for web applications. This comes in handy with a larger project, and is becoming increasingly popular throughout the software development industry. If the client requires a large-scale solution for their website, it could be a good idea to look into learning a front-end library like this.
+
+If the website is fairly static and doesn't use any logic, the team would only require knowledge of HTML and CSS to create an adequate solution. If the website is going to be carrying out logic and performing actions, they will also require knowledge of JavaScript. If the website is going to be even more complex, or highly scaleable, it may be worth looking at more javascript libraries and tech stacks. Testing skills may also be required depending on the complexity of the functions within the application, to ensure all features are working as expected upon deployment.
 
 **Soft Skills**
 
-Interaction with the client or business makes up the majority of the development process. This requires the team to learn soft skills such as communication and planning skills in order to define exactly how the final application will look and behave. This planning also ensures the project can be delivered on a specific timeline.
+Interaction with the client or business makes up the majority of the development process. This requires the team to learn soft skills such as communication, time management, teamwork and collaboration as well as any presentation skills required for delivering a product to the client. These skills also ensure the project can be delivered within a specific timeline, whilst meeting requirements laid out by the client.
+
+- Communication: Any time people are working in a team, or with a client, communication skills are crucial. Without adequate feedback from the client and consistent communication between team members, it will prove very difficult to achieve a good end result for the project.
+- Time Management: Another very important factor within a project for a client. Employing good time management skills ensures delivery of a production-ready project for the client within their requested time frame. Poor time management will lead to displeased clients, and half-finished projects. No good for anyone.
+- Teamwork and Collaboration: With a team taking on a project, it is likely that multiple developers and management roles will be working together to tackle the tasks ahead. It is important to sort out which tasks are to be handled by which team members, when they should be handled, and ensure appropriate feedback for when each task is completed. Without the correct collaboration skills, you could run into double-handling issues and conflicting changes between developers. This is a nightmare for anyone involved, not to mention a huge waste of time.
+- Presentation skills: Depending on the client, the team may require iterations of a project to be presented, whether that be to a board of business executives, or to a sole small-business client. Whatever the case, being able to show off the project and communicate the features effectively is a strong skill-set for any team member, and encourages a sense of professionalism to the client(s).
 
 ### Question 5
 
 _With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges_
 
-The project I chose for this question is a personal side-project I have created, AnonConnectr, a developer oriented social media platform (http://anon-connect.herokuapp.com). This project is built on the MERN stack and hosted with Heroku. This was challenging, as it required me to learn new technologies that I hadn't previously toyed with (exactly why I did the project in the first place). I had to learn the technical skills of utilizing MongoDB, React, Express and NodeJS to build each component and function of the application. This was both alot of fun, and very challenging. Learning how each of these technologies ties together to create responsive and scalable web-applications was a welcome experience, and has definitely helped to solidify my knowledge. Firstly, learning how to compile an application with Node was the first challenge met. This involved creating a new Node app and defining all the details and licensing information, then installing each other package as required. First on the list was Express, the framework driving the entire application. I used Express to structure my components into the MVC architecture and define the routing for all the requests and API's. Then I worked with MongoDB Atlas to link up with my application, and store all objects and data as JSON objects within a NoSQL database. React is then implemented to create all my front-end components and user interface. Finally I used Heroku CLI to deploy the application to a production build.
+The project I chose for this question is a personal side-project I have created, AnonConnectr, a developer oriented social media platform (http://anon-connect.herokuapp.com). This project is built on the MERN stack and hosted with Heroku. This was challenging, as it required me to learn new technologies that I hadn't previously toyed with (exactly why I did the project in the first place). I had to learn the technical skills of utilising MongoDB, React, Express and NodeJS to build each component and function of the application. This was both a lot of fun, and very challenging. Learning how each of these technologies ties together to create responsive and scalable web-applications was a welcome experience, and has definitely helped to solidify my knowledge.
+
+Firstly, learning how to compile an application with Node was the first challenge met. This involved creating a new Node application and defining all the details and licensing information, then installing each other package as required. I then needed to learn how to run a web server with Node, in order to actually host my web-application.
+
+First package on the list was Express, the framework driving the entire application. I used Express to structure my components into the MVC architecture and define the routing for all the requests and API's. This allows users to interact with the web-application via HTTP requests, which are then interpreted and routed to the appropriate components. This was a familiar process, as I had done the exact same idea using Ruby on Rails in a previous project.
+
+I then worked with MongoDB Atlas to link up with my application, and store all objects and data as JSON objects within a NoSQL database. This enables persistent data within my application, without which, would prove for a pretty useless social network. I set up my access keys and integrated them into the application, which allows access to the private database from within the AnonConnectr application.
+
+React is then implemented to create all my front-end components and user interface. This was a bit of an interesting learning curve, as I had no previous experience with React. Through the creation of many functional components, it actually made creating a complex web application quite simple. Each component can be made to be completely re-usable, vastly improving the DRYness of my application.
+
+Finally I used Heroku to deploy the applications production build. I achieved this by linking up the master branch of my GitHub repository to the Heroku app, and enabled continuous integration, so with every new push to the master branch, the application is re-deployed with the updated file system.
 
 ### Question 6
 
 _With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature_
 
-The project I have chosen for this question is my Portfolio Website (http://aaronlewis.io). This was one project that I was fairly comfortable with since the beginning, as I have knowledge and previous experience with the creation of basic websites that don't require large amounts of logic. My experience with HTML, CSS and basic JavaScript made the formatting and styling of this website very easy, and I found my only downfall at the time was more on the documentation side of things. In future projects, I have found it very worth-while to really buckle down on the project planning stage, and carve out a pathway for my programming to follow. The use of Wireframes, Sitemaps, ERD's and Control Flow Diagrams makes implementing the code logic incredibly simple, its basically just following the steps you've already written for yourself. Using appropriate planning also helps maintain some form of consistency within your website/application, resulting in a more polished project in the end.
+The project I have chosen for this question is my Portfolio Website (http://aaronlewis.io). This was one project that I was fairly comfortable with since the beginning, as I have previous knowledge and experience with the creation of basic websites that don't require large amounts of logic. My experience with HTML, CSS and basic JavaScript made the formatting and styling of this website fairly straight-forward, I pulled together nicely responsive components and implemented some simple JavaScript to handle page scrolling animations. Over-all I would say my knowledge was well within the comfortable range for a project like this, as a portfolio isn't too technically demanding of a website.
+
+I found my largest downfall at the time was more on the documentation side of things. A lot of the project 'planning' was done after the fact, I wasn't used to pre-planning projects, tending more to just smash out the functionality, and let it morph and change as the development process went on. In future projects, I have found it very worth-while to really buckle down on the project planning stage, and carve out a pathway for my programming to follow. The use of Wireframes, Sitemaps, ERD's and Control Flow Diagrams makes implementing the code logic incredibly simple, its basically just following the steps you've already written for yourself. Using appropriate planning also helps maintain some form of consistency within your website/application, resulting in a more polished project in the end.
 
 ### Question 7
 
@@ -112,7 +135,7 @@ function controlFlow() {
 }
 ```
 
-In this javascript example we can look at how the if statement handles control flow. The if keyword is used to check if the specified condition evaluates to true or false. If it is true, it will execute the block of code under it, until the next keyword (else if, else). If the condition is false, the control flow will ignore the code block and continue to the next keyword, in this case "else", which will execute its following block of code if all the previous conditions failed.
+In this javascript example we can look at how the 'if statement' handles control flow. The 'if' keyword is used to check if the specified condition evaluates to true or false. If it is true, it will execute the block of code under it, until the next keyword (else if, else). If the condition is false, the control flow will ignore the code block and continue to the next keyword, in this case 'else', which will execute its following block of code if all the previous conditions failed.
 
 Control flow in regards to Loops are handled by repeating the block of code within the loop, until the specified condition is met. Example:
 
@@ -124,7 +147,7 @@ function loopControlFlow() {
 }
 ```
 
-This function will log numbers from 0 to 9 into the console. Once i is incremented up to 10, the condition of the for loop is met, the loops breaks and continues to execute the code after the loop.
+This function will log numbers from 0 to 9 into the console. Once i is incremented up to 10, the condition of the 'for' loop is met, the loops breaks and continues to execute the code after the loop.
 
 ### Question 8
 
@@ -144,7 +167,7 @@ Implicit conversion is automatically handled by the language compiler when you a
 false == 'false'; // evaluates true
 ```
 
-Here we see the javascript compiler using implicit coersion to evaluate these statements to true. In order to force an explicit comparison, we have two use triple equals `'true' === true`.
+Here we see the JavaScript compiler using implicit coersion to evaluate these statements to true. In order to force an explicit comparison, we have two use triple equals `'true' === true`.
 
 Some strong typed languages do not support this. If incompatible data types are used together, the compiler will often return a Logic Error.
 
