@@ -24,10 +24,10 @@ _What are the most important aspects of quality software?_
 
 Quality software is often defined by the condition of the code that comprises it. By following only a few simple guidelines, you can increase your code integrity and the performance of your application.
 
-- DRY: Dont Repeat Yourself. By reducing the amount of repetitive functions, variable setting and logic statements, you are ensuring the long life of the software. Maintenance of software systems that havent adheared to the DRY principle is a nightmare. By not repeating yourself, you are reducing the number of variables you need to think about when making changes to the system.
+- DRY: Don't Repeat Yourself. By reducing the amount of repetitive functions, variable setting and logic statements, you are ensuring the long life of the software. Maintenance of software systems that haven't adhered to the DRY principle is a nightmare. By not repeating yourself, you are reducing the number of variables you need to think about when making changes to the system.
 - Time Complexity/Efficiency: When writing functions, consider the time complexity in its current state and if it can be improved. This ensures scalability if your application is suddenly handling more data than expected. Poor time complexity will lead to the system bogging down under the execution time of all these new calls.
 - Structured Code: When writing an application, the codebase should be organised according to the components they create. By adding breaks and whitespace to code, it improves the readability of each function, making each seperate function distinct from the others.
-- Clear Variable and Function Names: One key aspect of quality software is the readibility of the code itself. An easy way to ensure your code is clean and readable, use descriptive names when initialising variables. For example:
+- Clear Variable and Function Names: One key aspect of quality software is the readability of the code itself. An easy way to ensure your code is clean and readable, use descriptive names when initialising variables. For example:
 
 ```javascript
 function firstFunction(number) {
@@ -44,9 +44,9 @@ function convertCelciusToFarenheit(tempInCelcius) {
 }
 ```
 
-If youre familiar with the conversion process of temperatures, you may have been able to figure out the purpose of the first function. However, the average developer would have a far easier time recognising the purpose of the second function, as its clearly stated in the name of the function, and all values used are labelled appropriately.
+If you're familiar with the conversion process of temperatures, you may have been able to figure out the purpose of the first function. However, the average developer would have a far easier time recognising the purpose of the second function, as its clearly stated in the name of the function, and all values used are labelled appropriately.
 
-- Testability: Your software should be written in a manner that allows the functionality to be easily testable. This allows for confirmation that the program performs as expected in any environment, very important for a production release with any large userbase.
+- Testability: Your software should be written in a manner that allows the functionality to be easily testable. This allows for confirmation that the program performs as expected in any environment, very important for a production release with any large user-base.
 - Security: Providing your software is handling any form of user data or private information, it is very important to consider the level of security you have implemented into the application. Both from a legal and moral stand-point, the security of your user data is the responsibility of the team behind the software. Quality software will have taken into account the appropriate requirements for the project, and carried out the tasks to meet the security needs.
 
 **Ref**:
@@ -58,7 +58,7 @@ If youre familiar with the conversion process of temperatures, you may have been
 
 _Outline a standard high level structure for a MERN stack application and explain the components_
 
-A standard MERN stack application implements four technologies to create responsive and quick web applicaitons. MongoDB is the database solution, Express.js is the api/web framework, React is used for responsive front-end design, and Node.js is the javascript package manager that ties it all together.
+A standard MERN stack application implements four technologies to create responsive and quick web applications. MongoDB is the database solution, Express.js is the api/web framework, React is used for responsive front-end design, and Node.js is the javascript package manager that ties it all together.
 
 - MongoDB: MongoDB is a NoSQL database that uses JSON strings to store and retrieve data for a web-application. This allows our applications to have persistent data for each object in our system, such as Users, Profiles, Posts, Likes, Comments etc. Javascript Objects are converted into a JSON string for storage, and once needed again, parsed back into a regular Javascript Object.
 - Express.js: A web application framework similar to the likes of Ruby on Rails. Built for Node.js, it allows for the interaction of models and routes within an application. Express helps to organise your application into an MVC structure and is the backbone of any logic being performed.
@@ -94,6 +94,10 @@ Interaction with the client or business makes up the majority of the development
 - Time Management: Another very important factor within a project for a client. Employing good time management skills ensures delivery of a production-ready project for the client within their requested time frame. Poor time management will lead to displeased clients, and half-finished projects. No good for anyone.
 - Teamwork and Collaboration: With a team taking on a project, it is likely that multiple developers and management roles will be working together to tackle the tasks ahead. It is important to sort out which tasks are to be handled by which team members, when they should be handled, and ensure appropriate feedback for when each task is completed. Without the correct collaboration skills, you could run into double-handling issues and conflicting changes between developers. This is a nightmare for anyone involved, not to mention a huge waste of time.
 - Presentation skills: Depending on the client, the team may require iterations of a project to be presented, whether that be to a board of business executives, or to a sole small-business client. Whatever the case, being able to show off the project and communicate the features effectively is a strong skill-set for any team member, and encourages a sense of professionalism to the client(s).
+
+**Ref**:
+
+- https://www.netguru.com/blog/9-soft-skills-every-web-developer-should-master
 
 ### Question 5
 
@@ -167,7 +171,7 @@ Implicit conversion is automatically handled by the language compiler when you a
 false == 'false'; // evaluates true
 ```
 
-Here we see the JavaScript compiler using implicit coersion to evaluate these statements to true. In order to force an explicit comparison, we have two use triple equals `'true' === true`.
+Here we see the JavaScript compiler using implicit coercion to evaluate these statements to true. In order to force an explicit comparison, we have two use triple equals `'true' === true`.
 
 Some strong typed languages do not support this. If incompatible data types are used together, the compiler will often return a Logic Error.
 
@@ -175,7 +179,7 @@ Some strong typed languages do not support this. If incompatible data types are 
 
 _Explain data types, using examples from the JavaScript programming language_
 
-**Data Types** for most languages can be catagorized into three different forms: Strings, Numbers and Booleans. These different types tell the compiler/interpreter how to handle the data assigned to that type.
+**Data Types** for most languages can be catagorised into three different forms: Strings, Numbers and Booleans. These different types tell the compiler/interpreter how to handle the data assigned to that type.
 
 **Strings**: can be made up of words, single characters, whitespace and symbols. Eg:
 
@@ -275,7 +279,7 @@ Here we can see the changes made to the 'copy' of the initial array are also aff
 
 _Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language_
 
-This majority of functional JavaScript programming revolves around the use of Objects. Objects are structures which utilize key-value pairs to store data. Objects can be created and manipulated in multiple ways within JavaScript beginning with an 'Object Literal'. This looks like:
+This majority of functional JavaScript programming revolves around the use of Objects. Objects are structures which utilise key-value pairs to store data. Objects can be created and manipulated in multiple ways within JavaScript beginning with an 'Object Literal'. This looks like:
 
 ```javascript
 let car = {
@@ -303,7 +307,7 @@ function Car(make, model, year, body) {
 let myCar = new Car('Honda', 'Civic', 2009, 'hatchback')
 ```
 
-The implimentation of a function to create our objects for us, has allowed the quick and easy initialisation of as many objects as we want.
+The implementation of a function to create our objects for us, has allowed the quick and easy initialisation of as many objects as we want.
 
 To access and/or manipulate the data within out object, you reference the name we set the object variable as, with a method or property attached. Eg:
 
@@ -406,7 +410,7 @@ let models = Array.from(new Array(40), (x, i) => i + 1980); // Defining a models
 
 function randomIntFromInterval(min, max) {
   // Defining a function to generate a random integer that takes in two arguments, min and max.
-  return Math.floor(Math.random() * (max - min + 1) + min); // Utlizing the Math library, this returns the floor (rounded down) of the result of 'Math.random()' (outputs a number between 0 and 1), times the max argument, minus the min argument, plus 1, plus the min argument.... what the 🦆
+  return Math.floor(Math.random() * (max - min + 1) + min); // Utlising the Math library, this returns the floor (rounded down) of the result of 'Math.random()' (outputs a number between 0 and 1), times the max argument, minus the min argument, plus 1, plus the min argument.... what the 🦆
 }
 
 for (model of models) {
